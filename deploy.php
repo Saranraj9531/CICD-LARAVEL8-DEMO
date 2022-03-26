@@ -28,14 +28,14 @@ add('rsync', [
 ]);
 
 // Set up a deployer task to copy secrets to the server.
-// Since our secrets are stored in Gitlab, we can access them as env vars.
+// Since our secrets are stored in Github, we can access them as env vars.
 task('deploy:secrets', function () {
     file_put_contents(__DIR__ . '/.env', getenv('DOT_ENV'));
     upload('.env', get('deploy_path') . '/shared');
 });
 
 // Hosts
-host('54.172.13.203') // Name of the server
+  host('localhost') // Name of the server
 ->hostname('54.172.13.203') // Hostname or IP address
 ->stage('production') // Deployment stage (production, staging, etc)
 ->user('ubuntu') // SSH user
