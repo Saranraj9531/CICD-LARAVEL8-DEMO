@@ -37,7 +37,7 @@ task('deploy:secrets', function () {
 // Hosts
   
   host('localhost') // Name of the server
-->hostname('54.172.13.203') // Hostname or IP address
+->hostname('35.174.155.2') // Hostname or IP address
 ->stage('production') // Deployment stage (production, staging, etc)
 ->user('ubuntu') // SSH user
 ->set('deploy_path', '/var/www/html/php'); // Deploy path
