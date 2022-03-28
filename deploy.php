@@ -36,7 +36,7 @@ task('deploy:secrets', function () {
 
 // Hosts
   
-  host('localhost') // Name of the server
+  host('devthugs.com') // Name of the server
 ->hostname('35.174.155.2') // Hostname or IP address
 ->stage('production') // Deployment stage (production, staging, etc)
 ->user('ubuntu') // SSH user
