@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
+        "deployer/deployer": "^4.3",
         "deployer/recipes": "^6.2",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
@@ -20,7 +21,6 @@
         "spatie/yaml-front-matter": "^2.0"
     },
     "require-dev": {
-        "deployer/deployer": "^4.3",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
